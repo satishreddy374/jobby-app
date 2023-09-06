@@ -2,23 +2,35 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #000000;
 }
 
 .job-items-details-app-container {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  width: 100%;
+  background-color: #000000;
 }
 
 .job-item-container {
   background-color: gray;
   border-radius: 10px;
-  padding: 14px;
+  padding: 10px;
   display: flex;
-  margin-right: 26px;
-  margin-left: 26px;
   flex-direction: column;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 90%;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .job-item-container {
+    padding: 14px;
+    margin-right: 26px;
+    margin-left: 26px;
+    width: 95%;
+    margin-top: 30px;
+  }
 }
 
 .company-logo-and-rating-container {
@@ -27,8 +39,15 @@
 }
 
 .company-logo-image {
-  width: 78px;
-  height: 85px;
+  width: 50px;
+  height: 55px;
+}
+
+@media screen and (min-width: 768px) {
+  .company-logo-image {
+    width: 78px;
+    height: 85px;
+  }
 }
 
 .title-and-rating-container {
@@ -38,8 +57,14 @@
 
 .job-title {
   color: #ffffff;
-  font-size: 22px;
+  font-size: 18px;
   font-family: 'Roboto';
+}
+
+@media screen and (min-width: 768px) {
+  .job-title {
+    font-size: 22px;
+  }
 }
 
 .rating-container {
@@ -50,8 +75,14 @@
 
 .rating-text {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Roboto';
+}
+
+@media screen and (min-width: 768px) {
+  .rating-text {
+    font-size: 20px;
+  }
 }
 
 /* location job type package */
@@ -74,28 +105,47 @@
 
 .location {
   color: #ffffff;
-  font-size: 17px;
+  font-size: 15px;
   font-family: 'Roboto';
 }
 
 .job-type-container {
   display: flex;
   align-items: center;
-  margin-left: 18px;
+  margin-left: 13px;
 }
 
 .job-type {
   color: #ffffff;
-  font-size: 17px;
+  font-size: 15px;
   font-family: 'Roboto';
-  margin-left: 6px;
+  margin-left: 3px;
 }
 
 .package {
   color: #ffffff;
-  font-size: 22px;
+  font-size: 18px;
   font-family: 'Roboto';
   font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .location {
+    font-size: 17px;
+  }
+
+  .job-type-container {
+    margin-left: 18px;
+  }
+
+  .job-type {
+    font-size: 17px;
+    margin-left: 6px;
+  }
+
+  .package {
+    font-size: 22px;
+  }
 }
 
 .line {
@@ -119,6 +169,12 @@
   font-weight: 500;
 }
 
+@media screen and (min-width: 768px) {
+  .description-heading {
+    font-size: 22px;
+  }
+}
+
 .anchor-container {
   display: flex;
   align-items: center;
@@ -126,7 +182,7 @@
 
 .anchor-text {
   color: blue;
-  font-size: 18px;
+  font-size: 17px;
   font-family: 'Roboto';
   text-decoration: none;
   font-weight: 500;
@@ -134,16 +190,31 @@
 
 .job-description {
   color: #ffffff;
-  font-size: 15px;
+  font-size: 16px;
   font-family: 'Roboto';
 }
 
 .skills-heading {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Roboto';
   font-weight: 500;
   padding-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .anchor-text {
+    font-size: 18px;
+  }
+
+  .job-description {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .skills-heading {
+    font-size: 20px;
+  }
 }
 
 /* skills-container */
@@ -151,7 +222,7 @@
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  width: 1000px;
+  width: 100%;
   padding-left: 0px;
   padding-top: 0px;
 }
@@ -159,28 +230,46 @@
 .skill-item {
   display: flex;
   align-items: center;
-  width: 320px;
+  width: 42%;
   list-style-type: none;
   margin-bottom: 10px;
+  padding-left: 5px;
 }
 
 .skill-image {
-  width: 60px;
-  height: 60px;
-  margin-right: 12px;
+  width: 80px;
+  height: 70px;
+  margin-right: 14px;
 }
 
 .skill {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 17px;
   font-family: 'Roboto';
+}
+
+@media screen and (min-width: 768px) {
+  .skill-item {
+    width: 28%;
+    padding-left: 0px;
+  }
+
+  .skill-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+  }
+
+  .skill {
+    font-size: 16px;
+  }
 }
 
 /* life-at-company-heading */
 
 .life-at-company-heading {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 20px;
   font-family: 'Roboto';
   font-weight: 500;
   padding-bottom: 0px;
@@ -188,37 +277,75 @@
 
 .life-at-company-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
 }
 
 .life-at-company-description {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Roboto';
-  width: 600px;
+  width: 100%;
   line-height: 1.2;
-  padding: 4px;
+  padding: 2px;
 }
 
 .life-at-company-image {
-  width: 400px;
-  height: 260px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .life-at-company-heading {
+    font-size: 24px;
+  }
+
+  .life-at-company-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .life-at-company-description {
+    font-size: 18px;
+    padding: 4px;
+    width: 50%;
+    line-height: 1.4;
+  }
+
+  .life-at-company-image {
+    width: 40%;
+  }
 }
 
 .similar-jobs-heading {
   color: #ffffff;
-  font-size: 27px;
+  font-size: 20px;
   font-family: 'Roboto';
   font-weight: 500;
   padding-bottom: 0px;
-  margin-left: 27px;
+  margin-left: 18px;
 }
 
 .similar-jobs-list-container {
   display: flex;
-  flex-wrap: wrap;
-  width: 1100px;
-  padding-left: 20px;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .similar-jobs-heading {
+    font-size: 27px;
+    margin-left: 27px;
+  }
+
+  .similar-jobs-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 20px;
+  }
 }
 
 /* failure-view-container */
@@ -233,21 +360,36 @@
 }
 
 .failure-view-image {
-  width: 350px;
-  height: 350px;
+  width: 240px;
+  height: 250px;
 }
 
 .failure-view-container-heading {
   color: #ffffff;
-  font-size: 30px;
+  font-size: 20px;
   font-family: 'Roboto';
   font-weight: bold;
 }
 
 .failure-view-container-text {
   color: #ffffff;
-  font-size: 17px;
+  font-size: 15px;
   font-family: 'Roboto';
+}
+
+@media screen and (min-width: 768px) {
+  .failure-view-image {
+    width: 350px;
+    height: 350px;
+  }
+
+  .failure-view-container-heading {
+    font-size: 30px;
+  }
+
+  .failure-view-container-text {
+    font-size: 17px;
+  }
 }
 
 .retry-button {
@@ -269,5 +411,11 @@
   align-items: center;
   background-color: #000000;
   padding-top: 0px;
-  height: 60vh;
+  height: 50vh;
+}
+
+@media screen and (min-width: 768px) {
+  .loader-container {
+    height: 60vh;
+  }
 }
